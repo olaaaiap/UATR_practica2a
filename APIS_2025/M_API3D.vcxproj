@@ -156,9 +156,24 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="APIS3D_2025.cpp" />
+    <ClCompile Include="GL1Render.cpp" />
+    <ClCompile Include="IEntity.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="IRender.cpp" />
+    <ClCompile Include="Mesh3D.cpp" />
+    <ClCompile Include="IObject.cpp" />
+    <ClCompile Include="Object3D.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GL1Render.h" />
+    <ClInclude Include="IEntity.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="IRender.h" />
     <ClInclude Include="mapi\common.h" />
+    <ClInclude Include="Mesh3D.h" />
+    <ClInclude Include="IObject.h" />
+    <ClInclude Include="Object3D.h" />
+    <ClInclude Include="vertex_t.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
