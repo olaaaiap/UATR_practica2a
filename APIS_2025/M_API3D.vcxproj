@@ -157,6 +157,7 @@
   <ItemGroup>
     <ClCompile Include="APIS3D_2025.cpp" />
     <ClCompile Include="GL1Render.cpp" />
+    <ClCompile Include="GLFWInputManager.cpp" />
     <ClCompile Include="IEntity.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="IRender.cpp" />
@@ -166,6 +167,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GL1Render.h" />
+    <ClInclude Include="GLFWInputManager.h" />
     <ClInclude Include="IEntity.h" />
     <ClInclude Include="InputManager.h" />
     <ClInclude Include="IRender.h" />
