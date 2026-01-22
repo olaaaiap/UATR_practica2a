@@ -164,6 +164,8 @@
     <ClCompile Include="Mesh3D.cpp" />
     <ClCompile Include="IObject.cpp" />
     <ClCompile Include="Object3D.cpp" />
+    <ClCompile Include="System.cpp" />
+    <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GL1Render.h" />
@@ -175,7 +177,9 @@
     <ClInclude Include="Mesh3D.h" />
     <ClInclude Include="IObject.h" />
     <ClInclude Include="Object3D.h" />
+    <ClInclude Include="System.h" />
     <ClInclude Include="vertex_t.h" />
+    <ClInclude Include="World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
