@@ -42,6 +42,11 @@ void GL1Render::removeObject(IObject* obj)
 {
 }
 
+
+bool GL1Render::isClosed() {
+    return false;
+}
+
 //void GL1Render::drawObjects(std::vector<IObject*>* objs)
 //{
 //	//MODO NUEVO: CON BUFFERS ESTE ES EL METODO DRAW DE LA PRACTICA 2!!!!
@@ -113,3 +118,4 @@ void GL1Render::drawObjects(std::vector<IObject*>* objs)
         glDisableClientState(GL_COLOR_ARRAY);
     }
 }
+

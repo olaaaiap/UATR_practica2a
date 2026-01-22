@@ -1,5 +1,4 @@
 #pragma once
-#define GLAD_BIN
 #include "mapi/common.h"
 #include "IObject.h"
 #include "IRender.h"
@@ -30,5 +29,6 @@ public:
 	void setupObject(IObject* obj);
 	void removeObject(IObject* obj);
 	void drawObjects(std::vector<IObject*>* objs);
+	bool isClosed() override;
 };
 

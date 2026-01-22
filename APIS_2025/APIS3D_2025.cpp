@@ -1,3 +1,5 @@
+#define GLAD_BIN
+
 #include "mapi/common.h"
 
 

@@ -11,7 +11,7 @@ IRender* FactoryEngine::getNewRender()
 	switch (selectedGraphicsBackend)
 	{
 	case GraphicsBackend::GL1_0:
-		return new GL1Render(DEFAULT_WIDTH, DEFAULT_HEIGHT;
+		return new GL1Render(DEFAULT_WIDTH, DEFAULT_HEIGHT);
 
 	default:
 		return nullptr;
@@ -42,6 +42,6 @@ InputManager* FactoryEngine::getNewInputManager()
 bool FactoryEngine::isClosed() noexcept
 {
 	GLFWwindow* win = glfwGetCurrentContext();
-	if (!win) return true //si no hay ventana
-	return glfwWindowShouldClose(win) != 0; //si no hay ventana, consideramos que está cerrada
+	if (!win) return true; //si no hay ventana
+	return glfwWindowShouldClose(win)!= 0; //si no hay ventana, consideramos que está cerrada
 }

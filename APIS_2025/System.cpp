@@ -12,5 +12,5 @@ void System::addObject(Object3D* obj)
 
 void System::exit() 
 {
-	end = true;
+	
 }
