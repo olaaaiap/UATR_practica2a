@@ -2,7 +2,7 @@
 #include "GLFWInputManager.h"
 #include "System.h"
 
-TrianguloRot::TrianguloRot(){
+TrianguloRot::TrianguloRot() {
     Mesh3D* mesh = new Mesh3D();
     this->objectId = objectCounter++;
     this->vertexList = {
@@ -12,7 +12,7 @@ TrianguloRot::TrianguloRot(){
     };
     this->vertexIndexList = { 0, 1, 2 };
     
-    for(auto v : this->vertexList){
+    for(auto v : this->vertexList) {
         mesh->addVertex(v);
     }
 
@@ -21,7 +21,7 @@ TrianguloRot::TrianguloRot(){
     this->setEscala({ 1.0f,1.0f,1.0f,1.0f });
 }
 
-void TrianguloRot::step(double deltaTime){
+void TrianguloRot::step(double deltaTime) {
     float velRot = 90.0f;
     glm::vec4 rot = this->GetRotacion();
     
@@ -33,7 +33,7 @@ void TrianguloRot::step(double deltaTime){
 
     this->setRotacion(rot);
     
-    if (GLFWInputManager::keyboardState[GLFW_KEY_E]){
+    if (GLFWInputManager::keyboardState[GLFW_KEY_E]) {
         System::exit();
     }
 }

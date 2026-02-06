@@ -6,7 +6,7 @@
 #include "System.h"
 #include "TrianguloRot.h"
 
-int main(int argc, char** argv){
+int main(int argc, char** argv) {
 	IRender* render = FactoryEngine::getNewRender();
 	InputManager* inputManager = FactoryEngine::getNewInputManager();
 

@@ -4,19 +4,19 @@
 #include <GLFW/glfw3.h>
 #include <vector>
 
-void System::SetRender(IRender* r){
+void System::SetRender(IRender* r) {
 	render = r;
 }
 
-IRender* System::GetRender(){
+IRender* System::GetRender() {
 	return render;
 }
 
-void System::SetInputManager(InputManager* im){
+void System::SetInputManager(InputManager* im) {
 	inputManager = im;
 }
 
-InputManager* System::GetInputManager(){
+InputManager* System::GetInputManager() {
 	return inputManager;
 }
 
@@ -24,31 +24,30 @@ void System::SetWorld(World* w) {
 	world = w;
 }
 
-World* System::GetWorld(){
+World* System::GetWorld() {
 	return world;
 }
 
-void System::initSystem(){
+void System::initSystem() {
 	world = new World();
 	render = FactoryEngine::getNewRender();
 	inputManager = FactoryEngine::getNewInputManager();
 	render->init();
 	inputManager->init(glfwGetCurrentContext());
-
 }
 
-void System::addObject(Object3D* obj){
+void System::addObject(Object3D* obj) {
 	world->addObject(obj);
 }
 
-void System::exit(){
+void System::exit() {
 	end = true;
 }
 
-void System::mainLoop(){
+void System::mainLoop() {
 	auto& objList = world->getObjects();
 
-	for (auto* obj : objList){
+	for (auto* obj : objList) {
 		render->setupObject(obj);
 	}
 
@@ -63,7 +62,7 @@ void System::mainLoop(){
 		objVec.push_back(static_cast<IObject*>(obj));
 	}
 
-	while (!end){
+	while(!end) {
 		newTime = static_cast<float>(glfwGetTime());
 		deltaTime = newTime - lastTime;
 		lastTime = newTime;

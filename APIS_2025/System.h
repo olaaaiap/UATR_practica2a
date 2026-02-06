@@ -6,7 +6,7 @@
 
 class Object3D;
 
-class System{
+class System {
 	static inline IRender* render;
 	static inline InputManager* inputManager;
 	static inline bool end = false;
